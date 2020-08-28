@@ -64,7 +64,7 @@ bot.on('message', (msg) => {
             msg.member.voiceChannel.join()
             .then((connection) => {
                 msg.reply('Successfully connected to the voice channel');
-                const dispatcher = connection.playFile('C:\Users\Алексей\Documents\Shareman\Музыка\Дискотека 80-90-х - Коллекция\Дискотека 80-90-х - Коллекция (27 СD)\Дискотека 80-х - Лучшие Disco хиты часть 17.mp3');
+                const dispatcher = connection.playFile('Your music');
                 dispatcher.on('error', (err) => {
                     console.error(err);
                 })
